@@ -1,0 +1,9 @@
+<section class="footer">
+  {{#if @blog.logo}}
+  <span class="blog-logo">
+      <img src="{{@blog.logo}}" alt="{{@blog.title}}" width="30" />
+    </span>
+    {{/if}}
+  <p>{{@blog.title}} &copy; {{date format='YYYY'}} &middot; All Rights Reserved.</p>
+  <p>Proudly published with <a href="http://ghost.org" target="_blank">Ghost</a>.</p>
+</section>

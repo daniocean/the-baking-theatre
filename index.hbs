@@ -1,0 +1,46 @@
+{{!< default}}
+
+<section class="index">
+
+  <section class="newest-recipes clearfix">
+    <h2 class="section-title"><span>Newest Recipes</span></h2>
+    {{#foreach posts}}
+    <article class="{{post_class}}">
+      <div>
+        <div class="post-meta">
+          <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}/ <span class="post-tags">{{tags}}</span>{{/if}}
+        </div>
+        <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+        <div class="post-content">
+          {{content words="500"}}
+        </div>
+        {{#if @first}}
+          <div class="buttons clearfix">
+            <a href="{{{url}}}" class="bluish">Read More</a>
+            <a href="{{{url}}}#recipe-ingredients" class="reddish">See Recipe</a>
+          </div>
+        {{/if}}
+      </div>
+    </article>
+    {{/foreach}}
+
+  </section>
+
+  <section class="all-recipes clearfix">
+    <h2 class="section-title"><span>All Recipes</span></h2>
+    {{#foreach posts}}
+      <article class="{{post_class}}">
+        <div class="post-meta">
+           <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}/ <span class="post-tags">{{tags}}</span>{{/if}}
+        </div>
+        <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+        <div class="post-content">
+          {{content characters="10"}}
+        </div>
+      </article>
+    {{/foreach}}
+
+    {{pagination}}
+  </section>
+
+</section>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>How To Use</title>
+<style type="text/css">
+  body { margin: 0; padding: 0; background: #eee; }
+  .page { width: 640px; margin: 50px auto; padding: 40px; background: #fff; font: 13px/20px Arial, Tahoma, sans-serif; box-shadow: 3px 3px 3px rgba(0,0,0, 0.05); color: #666; }
+  .page h1 { font-size: 30px; color: #444; line-height: normal; margin: 0 0 20px; }
+  .page h2 { font-size: 22px; color: #444; line-height: normal; margin: 20px 0; }
+  .page a { color: #3498DB; }
+  .page a:hover { color: #308BC9; text-decoration: none; }
+  .page pre { display: block; border: 1px solid #e3edf3; background: #F7FAFB; overflow: visible; overflow-y: hidden; padding: 0 0 0 4px; font-size: 13px; line-height: 20px; font-family: Inconsolata, monospace, sans-serif; white-space: pre; word-break: break-all; word-wrap: break-word; }
+  .page code { padding: 1px 5px; font-size: 13px; line-height: 20px; border: 1px solid #e3edf3; background: #F7FAFB; font-family: Inconsolata, monospace, sans-serif; white-space: pre; word-break: break-all; word-wrap: break-word; }
+</style>
+</head>
+<body>
+  <div class="page">
+  
+    <h1>Delicious Documentation</h1>
+    <p>The documentation is intended to help you properly install and configure the theme. I am happy to help with any questions, so feel free to leave a comment on my profile if you need help.</p>
+
+    <h2>First things first</h2>
+    <p>Get familiar with Ghost installation and usage:</p>
+      <ul>
+        <li><a href="http://docs.ghost.org/installation/">Ghost Installation</a></li>
+        <li><a href="http://docs.ghost.org/usage/">Ghost Usage</a></li>
+      </ul>
+
+    <h2>Installation</h2>
+    <ol>
+      <li>Download the theme archive.</li>
+      <li>Navigate to <code>ghost/content/themes.</code></li>
+      <li>Paste the theme archive and unzip it.</li>
+      <li>Restart Ghost and log in to your Ghost dashboard at yourdomain.com/ghost/</li>
+      <li>Navigate to Settings &raquo; Themes and select <strong>delicious</strong> from the dropdown menu.</li>
+      <li>Click Save.</li>
+    </ol>
+
+    <h2>Configuration</h2>
+    <p>Configuring Featured is extremely easy and intuitive.</p>
+
+    <h3>Add Logo</h3>
+    <ol>
+      <li>Go to Settings &raquo; General.</li>
+      <li>Upload your image in the Blog Logo section. The image you upload here will be automatically added as logo in the blog header.</li>
+    </ol>
+
+
+    <h3>Add Blog Title &amp; Subtitle</h3>
+    <ol>
+      <li>Go to Settings &raquo; General.</li>
+      <li>Type your Blog Title in the Blog Title input field. The name you enter here will be automatically used in the theme header as your blog name.</li>
+      <li>Type your preferred blog description in the Blog Description input field. The text you enter here will be automatically used as your blog subtitle in the theme header right below the blog name.</li>
+    </ol>
+
+    <h3>Add Social Media &amp; Set Up Contact Link</h3>
+    <ol>
+      <li>Navigate to the <code>delicious/partials/social.hbs</code> file.</li>
+      <li>Replace the "#" values with your profile links for the respective social media sites. </li>
+      <li>If you want to remove any social icon from the theme, simply delete for example <code>&lt;a href="#" target="_blank" class="icon-googleplus">&lt;/a></code> from the file.</li>
+      <li>To receive emails from your visitors through the contact icon, replace <em>youremail@ghost-delicious.com</em> with your email address.</li>
+    </ol>
+
+    <h3>Food Tags</h3>
+    <p>The theme has a predefined set of tags that automatically generate a food icon depending on the tag you have chosen. If you use a tag different from the supported ones, the theme will generate a default food icon. The current theme version supports a single tag per post. If you add more than one tag, the theme will automatically add the default food icon. Tags are not case sensitive. The supported tags are listed below.</p>
+    <ul>
+      <li>asian</li>
+      <li>bbq</li>
+      <li>beer</li>
+      <li>breakfast</li>
+      <li>cocktails/cocktail</li>
+      <li>coffee</li>
+      <li>desserts/dessert</li>
+      <li>drinks/drink</li>
+      <li>fruits/fruit</li>
+      <li>junk</li>
+      <li>main</li>
+      <li>meat</li>
+      <li>pasta</li>
+      <li>pizza</li>
+      <li>salads/salad</li>
+      <li>seafood</li>
+      <li>snacks/snack</li>
+      <li>soups/soup</li>
+      <li>tea</li>
+      <li>vegetarian</li>
+    </ul>
+
+    <h3>Posts Images</h3>
+    <ol>
+      <li>To make your blog look visually and easthetically appealing, it is recommended to have at least 7 posts per page. This setting is controlled trough Settings &raquo; General &raquo; Posts per page.</li>
+      <li>In order for the thumbnails to show on the index of your blog properly, it is highly recommended to start each post with an image. Your first image from the post will be used as the thumbnail. The recommended image orientation for the thumbnails is a landscape format.</li>
+      <li>Due to a performance issue with Google Chrome, it is recommended to use images that are not more than 1000px wide.</li>
+      <li>Posts support video, however the current theme version does not support video as thumbnails.</li>
+    </ol>
+
+    <h3>Ingredients in Posts</h3>
+    <ul>
+      <li>Ingredients list
+      <p>The first unordered list from your post is automatically styled as an ingredients list and is always placed in the end of the post. The Ingredients lists do not support nested lists and if you have nested lists, they will be automatically hidden.</p>
+      </li>
+    </ul>
+
+    <ul>
+      <li>Ingredients Check/Uncheck
+      <p>The ingredients style allows the end user to check/uncheck the ingredients upon click. This feature, combined with the fully responsive theme design, is very useful and handy for your visitors shopping. They can easily mark the ingredients they have already bought.</p>
+      </li>
+    </ul>
+    
+    <h3>Add Disqus Comments To Your Blog</h3>
+    <ol>
+      <li><a href="https://disqus.com/admin/signup/?utm_source=New-Site">Create a Disqus account.</a> You also have to choose a site short name, which Disqus uses to allocate your website.</li>
+      <li>Open <code>delicious/post.hbs</code>, and find this line:
+        <div>
+          <code>var disqus_shortname = 'example'; // required: replace example with your forum shortname</code>
+        </div>
+      </li>
+      <li>Please make sure to change <code>'example'</code> to your own Disqus site short name.</li>
+    </ol>
+
+    <h3>Layered PSD Files</h3>
+    <p>The Delicious PSD files are located at <code>delicious/assets/psd/</code>.</p>
+
+    <h2>About Delicious</h2>
+    <p>Delicious v1.0 <br/> Released Dec 16, 2013</p>
+
+    <h2>Credits</h2>
+    <ul>
+      <li><a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a></li>
+      <li><a href="http://uifaces.com/" target="_blank">uiFaces</a></li>
+      <li><a href="http://fontawesome.io/" target="_blank">Fontawesome Icons</a></li>
+      <li><a href="http://fitvidsjs.com/" target="_blank">FitVidsJS</a></li>
+      <li><a href="http://www.infinite-scroll.com/" target="_blank">Infinite Scroll</a></li>
+      <li><a href="http://www.google.com/fonts/" target="_blank">Abel, Cardo, Oswald, Patrick Hand and Yellowtail from Google Fonts</a></li>
+      <li>Demo Images From Flickr: 
+        <a href="http://www.flickr.com/photos/nicktakespics/3747728143/sizes/l/" target="_blank">Nick Nguyen</a>, 
+        <a href="http://www.flickr.com/photos/nicktakespics/3747727389/sizes/l/" target="_blank">Nick Nguyen</a>, 
+        <a href="http://www.flickr.com/photos/nicktakespics/3748516440/sizes/l/" target="_blank">Nick Nguyen</a>, 
+        <a href="http://www.flickr.com/photos/denisdervisevic/4589449172/sizes/l/" target="_blank">BDenis Dervisevic</a>,
+        <a href="http://www.flickr.com/photos/ugod/4820238049/sizes/l/" target="_blank">Ugod</a>, 
+        <a href="http://www.flickr.com/photos/avlxyz/3087383373/sizes/l/" target="_blank">avlxyz</a>, 
+        <a href="http://www.flickr.com/photos/gpeters/3462048736/sizes/l/" target="_blank">Geoff Peters 604</a>, 
+        <a href="http://www.flickr.com/photos/gpeters/3462051642/sizes/l/" target="_blank">Geoff Peters 604</a>, 
+        <a href="http://www.flickr.com/photos/denisdervisevic/4608672449/sizes/l/" target="_blank">Denis Dervisevic</a>, 
+        <a href="http://www.flickr.com/photos/benhosking/4813183991/sizes/l/" target="_blank">HoskingIndustries</a>,
+        <a href="http://www.flickr.com/photos/stevendepolo/3651738513/sizes/l/" target="_blank">stevendepolo</a>, 
+        <a href="http://www.flickr.com/photos/puck777/2976850896/sizes/l/" target="_blank">Puck777</a>, 
+        <a href="http://www.flickr.com/photos/veganfeast/3886426904/sizes/l/" target="_blank">Janet Hudson</a>, 
+        <a href="http://www.flickr.com/photos/lablasco/8424513624/sizes/l/" target="_blank">Lablascovegmenu</a>,
+        <a href="http://www.flickr.com/photos/elmastudio/8608634625/sizes/l/" target="_blank">Elmastudio</a>,
+        <a href="http://www.flickr.com/photos/gpeters/3461234685/sizes/l/" target="_blank">Geoff Peters 604</a>,
+        <a href="http://www.flickr.com/photos/gpeters/3462052136/sizes/l/" target="_blank">Geoff Peters 604</a>,
+        <a href="http://www.flickr.com/photos/gpeters/3462053584/sizes/l/" target="_blank">Geoff Peters 604</a>,
+        <a href="http://www.flickr.com/photos/nicktakespics/3658284817/sizes/l/" target="_blank">Nick Nguyen</a>,
+        <a href="http://www.flickr.com/photos/hern42/9629238275/sizes/l/" target="_blank">hern42</a>, 
+        <a href="http://www.flickr.com/photos/eggplant/4847915204/sizes/l/" target="_blank">The Eggplant</a>,
+        <a href="http://www.flickr.com/photos/rubyran2626/7911989690/sizes/l/" target="_blank">Rubyran</a>,
+        <a href="http://www.flickr.com/photos/daryl_mitchell/10768802765/sizes/l/" target="_blank">daryl_mitchell</a>,
+        <a href="http://www.flickr.com/photos/ditaditamargarita/6898634122/sizes/l/" target="_blank">Dita Margarita</a>,
+        <a href="http://www.flickr.com/photos/waferboard/4659211175/sizes/l/" target="_blank">waferboard</a>,
+        <a href="http://www.flickr.com/photos/leszekleszczynski/4606441280/sizes/l/" target="_blank">Leszek.Leszczynski</a>,
+        <a href="http://www.flickr.com/photos/docguy/7116439699/sizes/l/" target="_blank">docguy</a>,
+        <a href="http://www.flickr.com/photos/pictographic/9964204476/sizes/l/" target="_blank">picto:graphic</a>,
+        <a href="http://www.flickr.com/photos/el-le_photography/5855067734/sizes/l/" target="_blank">El.lE Photography</a>,
+        <a href="http://www.flickr.com/photos/nebulux/10855743475/sizes/l/" target="_blank">Luca Nebuloni</a>,
+        <a href="http://www.flickr.com/photos/paulk/6545478113/sizes/l/" target="_blank">Paul Keller</a>,
+        <a href="http://www.flickr.com/photos/stuart_spivack/2389280130/sizes/l/" target="_blank">stu_spivack</a>,
+        <a href="http://www.flickr.com/photos/laurelfan/51347942/sizes/l/" target="_blank">Laurel Fan</a>,
+        <a href="http://www.flickr.com/photos/ted_major/4408231521/sizes/l/" target="_blank">ted_major</a>,
+        <a href="http://www.flickr.com/photos/notahipster/4100101848/sizes/l/" target="_blank">Stacy Spensley</a>,
+        <a href="http://www.flickr.com/photos/ralphandjenny/4436774834/sizes/l/" target="_blank">ralph and jenny</a>,
+        <a href="http://www.flickr.com/photos/jeffreyww/5162621876/sizes/l/" target="_blank">jeffreyw</a>,
+        <a href="http://www.flickr.com/photos/matupplevelser/4643868705/sizes/l/" target="_blank">Skånska Matupplevelser</a>,
+        <a href="http://www.flickr.com/photos/yoshimov/28710835/sizes/l/" target="_blank">yoshimov</a>,
+        <a href="http://www.flickr.com/photos/dee_m/2916867257/sizes/l/" target="_blank">dee m</a>
+      </li>
+      <li>Demo recipes from <a href="http://www.happyolks.com/" target="_blank">Happy Yolks</a>.</li>
+
+    </ul>
+
+    <p><strong>Demo images are not included in the download file.</strong></p>
+
+    <h2>Changelog</h2>
+
+    <strong>v1.0 (December 17, 2013)</strong>
+    <pre>- Initial Release</pre>
+
+    <strong>v1.1 (December 17, 2013)</strong>
+    <pre>- Back to top button bug fixed.<br/>- BackToTop plugin updated.</pre>
+    
+    <strong>v1.2 (March 19, 2014)</strong>
+    <pre>- Added Disqus support.</pre>
+
+  </div>
+  
+</body>
+</html>
